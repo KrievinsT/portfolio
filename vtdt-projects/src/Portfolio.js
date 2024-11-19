@@ -73,17 +73,17 @@ const Portfolio = () => {
           <div className="projects-grid">
             {[
               {
-                title: "E-Commerce Platform",
+                title: "SEO Site",
                 description: "A full-stack e-commerce solution with real-time inventory management.",
                 tech: "React, Node.js, MongoDB"
               },
               {
-                title: "Healthcare Dashboard",
+                title: "Forecast App",
                 description: "Interactive dashboard for medical professionals to monitor patient data.",
                 tech: "React, D3.js, Firebase"
               },
               {
-                title: "Mobile Banking App",
+                title: "LinChecker",
                 description: "Secure and intuitive mobile banking application.",
                 tech: "React Native, Redux, AWS"
               }
@@ -97,8 +97,10 @@ const Portfolio = () => {
           </div>
         </section>
       </div>
-      <FiChevronsDown />
+      <div className="icon-wrapper"><FiChevronsDown /></div>
+      
     </div>
+    
   );
 };
 

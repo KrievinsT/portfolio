@@ -213,26 +213,18 @@
   width: 12px; /* Width of the entire scrollbar */
 }
 
-/* The track (the part that sits underneath the scroll indicator) */
+
 ::-webkit-scrollbar-track {
-  background-color: #FF6500; /* Color of the track */
+  background-color: #1E3E62;
 }
 
-/* The scroll indicator */
 ::-webkit-scrollbar-thumb {
-  background-color: #FF6500; /* Color of the scroll indicator */
-  border-radius: 6px; /* Rounded corners of the scroll indicator */
+  background-color: #FF6500;
 }
-
-/* Hover effect for the scroll indicator */
-::-webkit-scrollbar-thumb:hover {
-  background-color: black; /* Color of the scroll indicator on hover */
-}
-
 
 .portfolio{
-  height: 98vh;
-  width: 98vw;
+  height: 85vh;
+  width: 95vw;
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -254,19 +246,19 @@
           margin: 3px;
         }
         li:hover{
-          background-color: #333;
-          color: #fff;
+          box-shadow: 0 2px 4px rgba(gray, 0.1);
+          color: red;
         }
     }
     &-link{
-        background-color: #fff;
-        color: #333;
+        background-color: #F9E2AF;
+        color: #F9E2AF;
         border: none;
-        border-radius: 20px;
         padding: 10px 20px;
         font-size: 16px;
+        font-weight: bold;
         cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
+        transition: background-color 0.3s, color 0.3s; 
     }
   }
   &__left{
@@ -275,10 +267,10 @@
     position: sticky;
   }
   &__right{
-    height: 50%;
+    height: 80%;
     width: 50%;
     overflow: auto;
-    // appearance: none;
+    margin-top: 3rem;
   }
   &__header h1 {
     font-size: 70px;
@@ -286,7 +278,15 @@
     color: #F9E2AF;
     font-family: "Lucida Console", "Courier New", monospace;
   }
+  &__description{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: #F9E2AF;
+    font-size: 20px;
+    font-weight: 600;
+  }
   h2{
+    font-size: 45px;
+    font-weight: 600;
     font-family: "Lucida Console", "Courier New", monospace;
 
   }
@@ -295,7 +295,7 @@
 
   }
 .section{
-  border: 1rem solid #0B192C;
+  // border: 1rem solid #0B192C;
   margin: 3rem;
   color: #F9E2AF;
 
@@ -304,6 +304,42 @@
   }
 }
 }
+.project-card {
+    background-color: transparent;
+    opacity: 0.5;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(gray, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 8px rgba(gray, 0.15);
+      cursor: pointer;
+      opacity:1;
+    }
+}
 body{
   background-color: #FF6500;
+}
+
+.icon-wrapper {
+  margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  
+  svg {
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s ease;
+    fill: #FF6500;
+    
+    &:hover {
+      transform: scale(2);
+    }
+  }
 }
