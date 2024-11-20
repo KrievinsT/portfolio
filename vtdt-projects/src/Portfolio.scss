@@ -1,216 +1,5 @@
-// $primary-color: #3C3D37;
-// $secondary-color: #b38000;
-// $accent-color: #3b82f6;
-// $text-color: #4a4a4a;
-// $transition-speed: 0.3s;
-
-// @mixin flex-center {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// @mixin section-padding {
-//   padding: 3rem;
-// }
-
-// .portfolio {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     height: 100vh;
-//     width: 100vw;
-//     overflow-x: hidden;
-
-//     &__divider {
-//       position: fixed;
-//       left: 30%; // Should align with end of left section
-//       width: 4%;
-//       height: 100vh;
-//       background-color: red;
-//       z-index: 10;
-//     }
-
-//     &__left {
-//       position: fixed;
-//       left: 0;
-//       width: 25%;  // This stays the same
-//       height: 100vh;
-//       background-color: $primary-color;
-//       color: $secondary-color;
-//       padding: 10px;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-between;
-//       align-items: flex-start;
-//     }
-  
-
-//   &__right {
-//     width: 55%;
-//     margin-left: 45%;
-//     padding: 10px;
-//     min-height: 100vh;
-//   }
-
-//   &__header {
-//     margin-bottom: 2rem;
-//   }
-
-//   &__name {
-//     font-size: 2.5rem;
-//     font-weight: bold;
-//     margin-bottom: 0.5rem;
-//   }
-
-//   &__title {
-//     font-size: 1.25rem;
-//     color: rgba($secondary-color, 0.8);
-//     margin-bottom: 1.5rem;
-//     text-align: center;
-//   }
-
-//   &__description {
-//     color: rgba($secondary-color, 0.8);
-//     line-height: 1.6;
-//     text-align: center;
-//   }
-
-//   &__nav {
-//     margin-bottom: 3rem;
-//     width: 100%;
-
-//     &-list {
-//       list-style: none;
-//       padding: 0;
-//       margin: 190px;
-//       display: flex;
-//       flex-direction: column;
-//       align-items: flex-start;
-//     }
-
-//     &-link {
-//       font-size: 1.25rem;
-//       color: $secondary-color;
-//       background: none;
-//       border: none;
-//       padding: 0.5rem 0;
-//       cursor: pointer;
-//       transition: color $transition-speed ease;
-//       text-align: center;
-//       cursor: pointer;
-//       &:hover {
-//         color: $accent-color;
-//       }
-//     }
-//   }
-// }
-// // Section styles
-// .section {
-//   @include section-padding;
-//   min-height: 100vh;
-//   margin-bottom: 2rem;
-  
-//   &--about {
-//     background-color: $secondary-color;
-//   }
-
-//   &--projects {
-//     background-color: #f9fafb;
-//   }
-
-//   &__title {
-//     font-size: 2rem;
-//     font-weight: bold;
-//     margin-bottom: 2rem;
-//     color: $primary-color;
-//   }
-
-//   &__content {
-//     p {
-//       color: $text-color;
-//       line-height: 1.7;
-//       margin-bottom: 1.5rem;
-//       text-align: center;
-
-//       &:last-child {
-//         margin-bottom: 0;
-//       }
-//     }
-//   }
-// }
-
-// // Projects grid
-// .projects-grid {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-//   gap: 2rem;
-// }
-
-// // Project card
-// .project-card {
-//   background-color: $secondary-color;
-//   padding: 1.5rem;
-//   border-radius: 0.5rem;
-//   box-shadow: 0 2px 4px rgba($primary-color, 0.1);
-//   transition: transform $transition-speed ease, box-shadow $transition-speed ease;
-
-//   &:hover {
-//     transform: translateY(-4px);
-//     box-shadow: 0 4px 8px rgba($primary-color, 0.15);
-//   }
-
-//   &__title {
-//     font-size: 1.25rem;
-//     font-weight: 600;
-//     margin-bottom: 0.5rem;
-//     color: $primary-color;
-//   }
-
-//   &__description {
-//     color: $text-color;
-//     margin-bottom: 1rem;
-//     line-height: 1.5;
-//   }
-
-//   &__tech {
-//     color: $accent-color;
-//     font-size: 0.875rem;
-//   }
-// }
-
-// // Media queries for responsiveness
-// @media (max-width: 768px) {
-//   .portfolio {
-//     flex-direction: column;
-
-//     &__left {
-//       position: relative;
-//       width: 100%;
-//       height: auto;
-//       padding: 2rem;
-//     }
-
-//     &__right {
-//       width: 100%;
-//       margin-left: 0;
-//     }
-//   }
-
-//   .section {
-//     padding: 2rem;
-//   }
-
-//   .projects-grid {
-//     grid-template-columns: 1fr;
-//   }
-// }
-
-
-/* The entire scrollbar */
 ::-webkit-scrollbar {
-  width: 12px; /* Width of the entire scrollbar */
+  width: 12px;
 }
 
 
@@ -245,20 +34,22 @@
         li{
           margin: 3px;
         }
-        li:hover{
-          box-shadow: 0 2px 4px rgba(gray, 0.1);
-          color: red;
-        }
     }
     &-link{
         background-color: #F9E2AF;
-        color: #F9E2AF;
+        color: #1E3E62;
+        width: 100px;
         border: none;
         padding: 10px 20px;
         font-size: 16px;
         font-weight: bold;
         cursor: pointer;
-        transition: background-color 0.3s, color 0.3s; 
+        transition: 0.3s, color 0.3s; 
+    }
+    &-link:hover{
+      width: 20em;
+      background-color: #FF6500;
+      color:#1E3E62;
     }
   }
   &__left{
@@ -315,8 +106,16 @@
     &:hover {
       transform: translateY(-4px);
       box-shadow: 0 4px 8px rgba(gray, 0.15);
-      cursor: pointer;
-      opacity:1;
+      opacity: 1;
+    }
+
+    &__description{
+      padding: 10px;
+      // border-bottom:1.5rem dotted #0B192C;
+    }
+    &__tech{
+      padding: 10px;
+      border-bottom:0.3rem dashed #2C4E80;
     }
 }
 body{
@@ -329,17 +128,78 @@ body{
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30rem;
+  right: 1.7rem;
   
   svg {
-    width: 24px;
-    height: 24px;
+    // display: ;
+    width: 40px;
+    height: 70px;
     transition: all 0.2s ease;
-    fill: #FF6500;
-    
-    &:hover {
-      transform: scale(2);
-    }
+    stroke:#FF6500;
+  }
+}
+
+:root {
+  --deg: 1;
+  --x: -50%;
+  --y: -50%;
+  --speed: 150ms;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(var(--x, -50%), var(--y, -50%)) rotate(0deg);
+  font-size: 20vmin;
+  width: 3em;
+  height: 3em;
+  border-radius: 90% 95% 85% 105%;
+  background: #0f0;
+  mix-blend-mode: screen;
+  filter: hue-rotate(0deg);
+  animation: wobble calc(var(--speed) * var(--t)) linear infinite;
+  transform-origin: -var(--y) -var(--x);
+  box-shadow: 0 0 .5em .2em #000 inset, 0 0 .15em 0 #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    font-size: 1em;
+    // content: '☻';
+    white-space: nowrap;
+  }
+  &:nth-child(1) {
+    --x: -53%;
+    --y: -53%;
+    --t: 37;
+  }
+  &:nth-child(2) {
+    --x: -47%;
+    --y: -52%;
+    --t: 58;
+  }
+  &:nth-child(3) {
+    --x: -45%;
+    --y: -50%;
+    --t: 46;
+  }
+  &:nth-child(4) {
+    --x: -53%;
+    --y: -45%;
+    --t: 72;
+  }
+  &:nth-child(5) {
+    --x: -55%;
+    --y: -45%;
+    --t: 62;
+  }
+}
+
+@keyframes wobble {
+  to {
+    filter: hue-rotate(360deg);
+    transform: translate(var(--x), var(--y)) rotate(360deg);
   }
 }

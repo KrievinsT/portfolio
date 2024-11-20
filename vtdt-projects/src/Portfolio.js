@@ -12,7 +12,6 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio">
-      {/* Left Side - Fixed Navigation */}
       <div className="portfolio__left">
         <div className="portfolio__header">
           <h1 className="portfolio__title">VTDT Internship Projects</h1>
@@ -43,9 +42,7 @@ const Portfolio = () => {
         </nav>
       </div>
 <div className="portfolio__divider"></div>
-      {/* Right Side - Scrollable Content */}
       <div className="portfolio__right">
-        {/* About Section */}
         <section ref={aboutRef} className="section section--about">
           <h2 className="section__title">About Us</h2>
           <div className="section__content">
@@ -67,7 +64,6 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Projects Section */}
         <section ref={projectsRef} className="section section--projects">
           <h2 className="section__title">Our Projects</h2>
           <div className="projects-grid">
@@ -98,8 +94,12 @@ const Portfolio = () => {
         </section>
       </div>
       <div className="icon-wrapper"><FiChevronsDown /></div>
-      
-    </div>
+      <div className='circle'></div>
+  <div className='circle'></div>
+  <div className='circle'></div>
+  <div className='circle'></div>
+  <div className='circle'></div>    
+  </div>
     
   );
 };
