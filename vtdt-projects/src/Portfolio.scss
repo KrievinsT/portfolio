@@ -1,3 +1,6 @@
+body{
+  background-color: #FF6500;
+}
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -47,7 +50,7 @@
         transition: 0.3s, color 0.3s; 
     }
     &-link:hover{
-      width: 20em;
+      width: 10em;
       background-color: #FF6500;
       color:#1E3E62;
     }
@@ -72,18 +75,18 @@
   &__description{
     font-family: "Lucida Console", "Courier New", monospace;
     color: #F9E2AF;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
   }
   h2{
-    font-size: 45px;
+    font-size: 2.8rem;
     font-weight: 600;
     font-family: "Lucida Console", "Courier New", monospace;
 
   }
   p{
     font-family: "Lucida Console", "Courier New", monospace;
-
+    font-size: 1.2rem;
   }
 .section{
   // border: 1rem solid #0B192C;
@@ -99,13 +102,14 @@
     background-color: transparent;
     opacity: 0.5;
     padding: 1.5rem;
+    border-top: 6px dashed #FF6500;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(gray, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   
     &:hover {
       transform: translateY(-4px);
-      box-shadow: 0 4px 8px rgba(gray, 0.15);
+      box-shadow: 0 8px 8px rgba(#FF6500, 0.15);
       opacity: 1;
     }
 
@@ -115,11 +119,8 @@
     }
     &__tech{
       padding: 10px;
-      border-bottom:0.3rem dashed #2C4E80;
+      // border-bottom:0.3rem dashed #2C4E80;
     }
-}
-body{
-  background-color: #FF6500;
 }
 
 .icon-wrapper {
@@ -149,12 +150,14 @@ body{
 
 .circle {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  bottom: 5px;
+  top: 80%;
+  left: 77%;
+  right: 5px;
   transform: translate(var(--x, -50%), var(--y, -50%)) rotate(0deg);
   font-size: 20vmin;
-  width: 3em;
-  height: 3em;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 90% 95% 85% 105%;
   background: #0f0;
   mix-blend-mode: screen;
@@ -166,8 +169,8 @@ body{
   align-items: center;
   justify-content: center;
   &::after {
-    font-size: 1em;
-    // content: '☻';
+    font-size: 0.5em;
+    content: "VTDT";
     white-space: nowrap;
   }
   &:nth-child(1) {
@@ -201,5 +204,43 @@ body{
   to {
     filter: hue-rotate(360deg);
     transform: translate(var(--x), var(--y)) rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .portfolio {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__left {
+      position: relative;
+      width: 100vw;
+      height: 80vh;
+      padding: 2rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__right {
+      width: 100%;
+      margin-left: 0;
+      padding: 2rem;
+    }
+
+    .icon-wrapper {
+      display: none;
+    }
+  }
+
+  .section {
+    padding: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -13,6 +13,11 @@ const Portfolio = () => {
   return (
     <div className="portfolio">
       <div className="portfolio__left">
+      <div className='circle'></div>
+  <div className='circle'></div>
+  <div className='circle'></div>
+  <div className='circle'></div>
+  <div className='circle'></div>
         <div className="portfolio__header">
           <h1 className="portfolio__title">VTDT Internship Projects</h1>
           <p className="portfolio__description">
@@ -43,6 +48,7 @@ const Portfolio = () => {
       </div>
 <div className="portfolio__divider"></div>
       <div className="portfolio__right">
+        
         <section ref={aboutRef} className="section section--about">
           <h2 className="section__title">About Us</h2>
           <div className="section__content">
@@ -93,12 +99,7 @@ const Portfolio = () => {
           </div>
         </section>
       </div>
-      <div className="icon-wrapper"><FiChevronsDown /></div>
-      <div className='circle'></div>
-  <div className='circle'></div>
-  <div className='circle'></div>
-  <div className='circle'></div>
-  <div className='circle'></div>    
+      <div className="icon-wrapper"><FiChevronsDown /></div>    
   </div>
     
   );
