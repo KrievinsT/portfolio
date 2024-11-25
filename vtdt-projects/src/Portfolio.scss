@@ -1,5 +1,5 @@
 body{
-  background-color: #FF6500;
+  background-color:#1E3E62;
 }
 ::-webkit-scrollbar {
   width: 12px;
@@ -67,7 +67,7 @@ body{
     margin-top: 3rem;
   }
   &__header h1 {
-    font-size: 70px;
+    font-size: 4.2rem;
     font-weight: 600;
     color: #F9E2AF;
     font-family: "Lucida Console", "Courier New", monospace;
@@ -89,7 +89,6 @@ body{
     font-size: 1.2rem;
   }
 .section{
-  // border: 1rem solid #0B192C;
   margin: 3rem;
   color: #F9E2AF;
 
@@ -115,11 +114,9 @@ body{
 
     &__description{
       padding: 10px;
-      // border-bottom:1.5rem dotted #0B192C;
     }
     &__tech{
       padding: 10px;
-      // border-bottom:0.3rem dashed #2C4E80;
     }
 }
 
@@ -133,9 +130,8 @@ body{
   right: 1.7rem;
   
   svg {
-    // display: ;
-    width: 40px;
-    height: 70px;
+    width: 2.5rem;
+    height: 4.3rem;
     transition: all 0.2s ease;
     stroke:#FF6500;
   }
@@ -207,37 +203,52 @@ body{
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 500px) {
+  .section{
+    margin: 3rem;
+    color: #F9E2AF;
+  
+    &__content{
+      font-family: "Lucida Console", "Courier New", monospace;
+    }
+  }
   .portfolio {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    &__left {
-      position: relative;
-      width: 100vw;
-      height: 80vh;
-      padding: 2rem;
-      align-items: center;
-      text-align: center;
-    }
-
-    &__right {
-      width: 100%;
-      margin-left: 0;
-      padding: 2rem;
-    }
-
-    .icon-wrapper {
-      display: none;
+    &__title{
+      font-size: 3rem !important;
     }
   }
 
-  .section {
+  .portfolio__left {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    // padding: 2rem;
+    align-items: center;
+    text-align: center;
+    &__header h1 {
+      font-size: 0.1rem;
+      font-weight: 600;
+      color: #F9E2AF;
+      font-family: "Lucida Console", "Courier New", monospace;
+    }
+  }
+
+  .portfolio__right {
+    width: 100%;
+    height: auto; 
     padding: 2rem;
+  }
+
+  .portfolio .icon-wrapper {
+    display: none;
   }
 
   .projects-grid {
