@@ -76,25 +76,30 @@ const Portfolio = () => {
             {[
               {
                 title: "SEO Site",
+                link: "https://seo-vtdt-project.vercel.app/index.html",
                 description: "A full-stack e-commerce solution with real-time inventory management.",
                 tech: "React, Node.js, MongoDB"
               },
               {
                 title: "Forecast App",
+                link: "https://forecast-app-vtdt.vercel.app/",
                 description: "Interactive dashboard for medical professionals to monitor patient data.",
                 tech: "React, D3.js, Firebase"
               },
               {
                 title: "LinChecker",
+                link: "https://lin-scraper-vtdt.vercel.app/",
                 description: "Secure and intuitive mobile banking application.",
                 tech: "React Native, Redux, AWS"
               }
             ].map((project, index) => (
+          <a href={project.link}>
               <div key={index} className="project-card">
                 <h3 className="project-card__title">{project.title}</h3>
                 <p className="project-card__description">{project.description}</p>
                 <p className="project-card__tech">{project.tech}</p>
               </div>
+              </a>
             ))}
           </div>
         </section>
